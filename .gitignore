@@ -1,0 +1,14 @@
+# 渲染/运行产物（不入库）
+**/media/
+*.mp4
+*.png
+*.gif
+
+# Python / 系统垃圾
+**/__pycache__/
+*.pyc
+.DS_Store
+
+# 本地虚拟环境
+.venv/
+venv/
