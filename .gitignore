@@ -4,8 +4,9 @@
 *.png
 *.gif
 
-# 例外：保留效果演示视频
+# 例外：保留效果演示视频与 GIF 预览
 !examples/BoxDivide.mp4
+!examples/BoxDivide.gif
 
 # Python / 系统垃圾
 **/__pycache__/

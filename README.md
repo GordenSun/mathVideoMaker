@@ -18,11 +18,11 @@
 - **机械化布局 + 生动化**：安全区 + `fit_content` 防出界；深色配色 + 辉光 + 强调动效；字幕带底衬。
 
 ## 效果演示
-小学题「□ + 28 = □ × 5」讲解视频：
+小学题「□ + 28 = □ × 5」讲解视频（GIF 预览）：
 
-<video src="https://github.com/GordenSun/mathVideoMaker/raw/main/examples/BoxDivide.mp4" controls muted width="640"></video>
+![演示：□ + 28 = □ × 5](examples/BoxDivide.gif)
 
-> 若播放器未显示，点这里查看/下载：[examples/BoxDivide.mp4](examples/BoxDivide.mp4)。同一主题还会生成配套的交互式网页（拖动 □ 让天平平衡）。
+> 看完整高清版（含原速）：[examples/BoxDivide.mp4](examples/BoxDivide.mp4)。同一主题还会生成配套的交互式网页（拖动 □ 让天平平衡）。
 
 ## 安装
 把本仓库的 `skills/math-explainer/` 放到你的项目（或个人目录）的 `.cursor/skills/` 下：
