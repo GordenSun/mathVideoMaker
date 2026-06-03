@@ -17,16 +17,21 @@
   - `check_web.py` 静态查网页（公式/id/滑块/canvas/布局/JS 语法）。
 - **机械化布局 + 生动化**：安全区 + `fit_content` 防出界；深色配色 + 辉光 + 强调动效；字幕带底衬。
 
+## 效果演示
+一个示例成品（小学题「□ + 28 = □ × 5」讲解视频）：[examples/BoxDivide.mp4](examples/BoxDivide.mp4)（点击查看/下载）。
+> 同一主题还会生成配套的交互式网页（拖动 □ 让天平平衡）。
+
 ## 安装
-把本仓库的 `.cursor/skills/math-explainer/` 放到你的项目（或个人目录）下：
+把本仓库的 `skills/math-explainer/` 放到你的项目（或个人目录）的 `.cursor/skills/` 下：
 
 ```bash
-# 方式一：克隆到项目根（技能随项目生效）
 git clone https://github.com/GordenSun/mathVideoMaker.git
-cp -R mathVideoMaker/.cursor/skills/math-explainer  你的项目/.cursor/skills/
+
+# 方式一：作为项目技能（随项目生效）
+cp -R mathVideoMaker/skills/math-explainer  你的项目/.cursor/skills/
 
 # 方式二：作为个人技能（所有项目可用）
-cp -R mathVideoMaker/.cursor/skills/math-explainer  ~/.cursor/skills/
+cp -R mathVideoMaker/skills/math-explainer  ~/.cursor/skills/
 ```
 
 ## 环境（仅生成视频需要；纯网页可跳过）
@@ -47,9 +52,15 @@ Agent 会读 `SKILL.md` 按阶段流程产出**视频 + 配套网页**，成品�
 
 ## 目录结构
 ```
-.cursor/skills/math-explainer/
-├── SKILL.md                       # 主编排：阶段流程 + 检查关卡
-├── references/                    # 教学法/分镜、Manim 指南、配方、网页指南
-├── scripts/                       # setup / check_env / check_text / check_web / render
-└── templates/                     # 场景骨架、mathviz 护栏、黄金范例、网页与分镜模板
+mathVideoMaker/
+├── skills/math-explainer/         # 把它复制到 .cursor/skills/ 下使用
+│   ├── SKILL.md                   # 主编排：阶段流程 + 检查关卡
+│   ├── references/                # 教学法/分镜、Manim 指南、配方、网页指南
+│   ├── scripts/                   # setup / check_env / check_text / check_web / render
+│   └── templates/                 # 场景骨架、mathviz 护栏、黄金范例、网页与分镜模板
+└── examples/                      # 效果演示视频
 ```
+
+---
+
+感谢 [LinuxDO](https://linux.do) 社区的支持
